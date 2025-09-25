@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kiryzz Official Script V9 - VVIP Bot Script</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Loading Animation -->
+    <div id="loadingScreen" class="loading-screen">
+        <div class="loading-container">
+            <div class="cyber-logo">
+                <h1 class="loading-text">Kiryzz </h1>
+                <div class="loading-subtitle">Alwayszakzz Website Script</div>
+            </div>
+            <div class="loading-animation">
+                <div class="loading-bar">
+                    <div class="loading-progress"></div>
+                </div>
+                <div class="loading-percentage">0%</div>
+            </div>
+            <div class="cyber-grid"></div>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <div id="mainContent" class="main-content">
+        <!-- Header -->
+        <header class="header">
+            <nav class="navbar">
+                <div class="nav-brand">
+                    <h1>Alwayszakzz</h1>
+                    <span>V9 Script</span>
+                </div>
+                <div class="nav-menu">
+                    <a href="#home" class="nav-link active">Home</a>
+                    <a href="#packages" class="nav-link">Packages</a>
+                    <a href="#features" class="nav-link">Features</a>
+                    <a href="#order" class="nav-link">Order</a>
+                </div>
+            </nav>
+        </header>
+
+        <!-- Hero Section -->
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    <span class="gradient-text">SCRIPT ALWAYSZAKZZ V9</span>
+                    <br>VVIP Bot WhatsApp
+                </h1>
+                <p class="hero-description">
+                    Script bot WhatsApp terlengkap dengan fitur VVIP, bug terkini, dan sistem keamanan tinggi
+                </p>
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <h3>500+</h3>
+                        <p>Fitur VVIP</p>
+                    </div>
+                    <div class="stat-item">
+                        <h3>99%</h3>
+                        <p>Uptime</p>
+                    </div>
+                    <div class="stat-item">
+                        <h3>24/7</h3>
+                        <p>Support</p>
+                    </div>
+                </div>
+                <button class="cta-button" onclick="scrollToSection('packages')">
+                    <i class="fas fa-rocket"></i>
+                    Dapatkan Sekarang
+                </button>
+            </div>
+        </section>
+
+        <!-- Packages Section -->
+        <section id="packages" class="packages">
+            <div class="container">
+                <h2 class="section-title">Pilihan Paket Script</h2>
+                <div class="packages-grid">
+                    <div class="package-card" data-package="seller">
+                        <div class="package-header">
+                            <h3>Seller</h3>
+                            <div class="price">
+                                <span class="new-price">45K</span>
+                            </div>
+                        </div>
+                        <ul class="package-features">
+                            <li><i class="fas fa-check"></i> Bisa jual kembali script</li>
+                            <li><i class="fas fa-check"></i> AddDB sepuasnya</li>
+                            <li><i class="fas fa-check"></i> Free update permanen</li>
+                            <li><i class="fas fa-check"></i> 80% no encrypt</li>
+                        </ul>
+                        <button class="package-btn" onclick="selectPackage('seller', 30000)">Pilih Paket</button>
+                    </div>
+
+                    <div class="package-card popular" data-package="owner">
+                        <div class="package-badge">Popular</div>
+                        <div class="package-header">
+                            <h3>Owner</h3>
+                            <div class="price">
+                                <span class="new-price">55K</span>
+                            </div>
+                        </div>
+                        <ul class="package-features">
+                            <li><i class="fas fa-check"></i> Bisa jual kembali script</li>
+                            <li><i class="fas fa-check"></i> Open reseller + script AddDB</li>
+                            <li><i class="fas fa-check"></i> AddDB sepuasnya</li>
+                            <li><i class="fas fa-check"></i> Free update permanen</li>
+                            <li><i class="fas fa-check"></i> 80% no encrypt</li>
+                        </ul>
+                        <button class="package-btn" onclick="selectPackage('owner', 40000)">Pilih Paket</button>
+                    </div>
+
+                    <div class="package-card" data-package="partner">
+                        <div class="package-header">
+                            <h3>Partner</h3>
+                            <div class="price">
+                                <span class="new-price">70K</span>
+                            </div>
+                        </div>
+                        <ul class="package-features">
+                            <li><i class="fas fa-check"></i> Open reseller & owner</li>
+                            <li><i class="fas fa-check"></i> Script AddDB</li>
+                            <li><i class="fas fa-check"></i> AddDB sepuasnya</li>
+                            <li><i class="fas fa-check"></i> Free update permanen</li>
+                            <li><i class="fas fa-check"></i> 90% no encrypt</li>
+                        </ul>
+                        <button class="package-btn" onclick="selectPackage('partner', 60000)">Pilih Paket</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Features Section -->
+        <section id="features" class="features">
+            <div class="container">
+                <h2 class="section-title">Fitur Unggulan</h2>
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <h3>Security Tinggi</h3>
+                        <p>Berdatabase dengan password yang bisa direquest sesuai keinginan</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-bug"></i>
+                        </div>
+                        <h3>Bug Terkini</h3>
+                        <p>BLANK FC, KILL-GB, CRASHBLANK dan bug terbaru lainnya yang masih work</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-robot"></i>
+                        </div>
+                        <h3>Auto Features</h3>
+                        <p>JPMCH, CREATESC, CREATEWEB, dan fitur otomatis lainnya</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-server"></i>
+                        </div>
+                        <h3>Panel Work</h3>
+                        <p>Panel work 2 server dengan fitur management lengkap</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-cloud"></i>
+                        </div>
+                        <h3>CloudFlare</h3>
+                        <p>Anti DDoS protection dan CF Protection untuk keamanan maksimal</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-download"></i>
+                        </div>
+                        <h3>Downloader</h3>
+                        <p>Fitur download lengkap untuk berbagai platform media sosial</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Order Section -->
+        <section id="order" class="order">
+            <div class="container">
+                <h2 class="section-title">Order Script AlwaysZakzz</h2>
+                <div class="order-container">
+                    <div class="order-form-container">
+                        <form id="orderForm" class="order-form">
+                            <div class="form-group">
+                                <label for="selectedPackage">Paket Terpilih</label>
+                                <input type="text" id="selectedPackage" readonly placeholder="Pilih paket terlebih dahulu">
+                            </div>
+                            <div class="form-group">
+                                <label for="buyerName">Nama Pembeli</label>
+                                <input type="text" id="buyerName" required placeholder="Masukkan nama lengkap">
+                            </div>
+                            <div class="form-group">
+                                <label for="buyerTelegram">Username Telegram</label>
+                                <input type="text" id="buyerTelegram" required placeholder="@username">
+                            </div>
+                            <div class="form-group">
+                                <label for="totalPrice">Total Harga</label>
+                                <input type="text" id="totalPrice" readonly placeholder="Rp 0">
+                            </div>
+                            <button type="button" id="processOrder" class="order-btn" disabled>
+                                <i class="fas fa-shopping-cart"></i>
+                                Proses Pesanan
+                            </button>
+                        </form>
+                    </div>
+
+                    <div class="payment-container" id="paymentContainer" style="display: none;">
+                        <div class="payment-info">
+                            <h3>Informasi Pembayaran</h3>
+                            <div class="payment-method">
+                                <div class="dana-payment">
+                                    <h4><i class="fas fa-wallet"></i> DANA</h4>
+                                    <div class="payment-details">
+                                        <p>Nomor: <span class="copy-text" onclick="copyText('0882015857798')">0882015857798</span> 
+                                           <button class="copy-btn" onclick="copyText('0882015857798')">
+                                               <i class="fas fa-copy"></i>
+                                           </button>
+                                        </p>
+                                        <p>Atas Nama: <strong>KEL***</strong></p>
+                                    </div>
+                                </div>
+                                <div class="qris-payment">
+                                    <h4><i class="fas fa-qrcode"></i> QRIS</h4>
+                                    <div class="qris-code">
+                                        <img src="https://files.catbox.moe/e8tqid.jpg" alt="QRIS Code" />
+                                        <p>Scan untuk pembayaran cepat</p>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="upload-section">
+                                <h4>Upload Bukti Transfer</h4>
+                                <div class="file-upload">
+                                    <input type="file" id="paymentProof" accept="image/*" onchange="handleFileUpload(event)">
+                                    <label for="paymentProof" class="upload-btn">
+                                        <i class="fas fa-upload"></i>
+                                        Pilih Bukti Transfer
+                                    </label>
+                                </div>
+                                <div id="previewContainer" style="display: none;">
+                                    <img id="imagePreview" alt="Preview" />
+                                    <button type="button" onclick="removePreview()" class="remove-btn">
+                                        <i class="fas fa-times"></i>
+                                    </button>
+                                </div>
+                                <button type="button" id="confirmPayment" class="confirm-btn" disabled>
+                                    <i class="fas fa-paper-plane"></i>
+                                    Kirim Bukti Transfer
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-section">
+                    <h3>Kontak & Support</h3>
+                    <div class="contact-buttons">
+                        <a href="https://t.me/Gusionofficiall" target="_blank" class="contact-btn telegram">
+                            <i class="fab fa-telegram"></i>
+                            Telegram
+                        </a>
+                        <a href="https://whatsapp.com/channel/0029Vb1fHgdJuyAEaA9jbm3I" target="_blank" class="contact-btn testimoni">
+                            <i class="fab fa-whatsapp"></i>
+                            Testimoni
+                        </a>
+                        <a href="https://t.me/Review_Script_Bot_Wa" target="_blank" class="contact-btn channel">
+                            <i class="fas fa-info-circle"></i>
+                            Info Channel
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="container">
+                <div class="footer-content">
+                    <div class="footer-section">
+                        <h3>AlwaysZakzz V9</h3>
+                        <p>Script bot WhatsApp VVIP dengan fitur terlengkap dan update permanen.</p>
+                    </div>
+                    <div class="footer-section">
+                        <h3>Quick Links</h3>
+                        <ul>
+                            <li><a href="#packages">Paket</a></li>
+                            <li><a href="#features">Fitur</a></li>
+                            <li><a href="#order">Order</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-section">
+                        <h3>Support</h3>
+                        <ul>
+                            <li><a href="https://t.me/AlwaysZakzz">Telegram</a></li>
+                            <li><a href="https://whatsapp.com/channel/0029Vb4GJoH0LKZDtKkFTA1Y">Testimoni</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <p>&copy; 2025 AlwaysZakzz. All rights reserved. | Created by Zakzzofficiall</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Success Modal -->
+    <div id="successModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2><i class="fas fa-check-circle"></i> Pesanan Berhasil!</h2>
+            </div>
+            <div class="modal-body">
+                <p>Bukti transfer Anda telah dikirim ke Telegram. Kami akan memproses pesanan Anda segera.</p>
+                <p>Silakan bergabung ke grup WhatsApp untuk mendapatkan script:</p>
+                <a href="https://chat.whatsapp.com/G9Dd9DdVfOX18zCzK5KmAB" class="whatsapp-btn" target="_blank">
+                    <i class="fab fa-whatsapp"></i>
+                    Join Grup WhatsApp
+                </a>
+            </div>
+            <div class="modal-footer">
+                <button onclick="closeModal()" class="close-btn">Tutup</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
